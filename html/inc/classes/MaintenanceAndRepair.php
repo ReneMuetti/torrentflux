@@ -72,7 +72,7 @@ class MaintenanceAndRepair
      *
      * @return MaintenanceAndRepair
      */
-    function getInstance() {
+    public static function getInstance() {
 		global $instanceMaintenanceAndRepair;
 		// initialize
 		MaintenanceAndRepair::initialize();
@@ -119,7 +119,7 @@ class MaintenanceAndRepair
 	 *
 	 * @param $trestart
 	 */
-	function maintenance($type = MAINTENANCEANDREPAIR_TYPE_STD) {
+	public static function maintenance($type = MAINTENANCEANDREPAIR_TYPE_STD) {
 		global $instanceMaintenanceAndRepair;
 		// initialize
 		MaintenanceAndRepair::initialize();
