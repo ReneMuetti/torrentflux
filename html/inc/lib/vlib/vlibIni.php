@@ -43,7 +43,7 @@ if (!defined('vlibIniClassLoaded')) {
     class vlibIni {
 
         /** config vars for vlibTemplate */
-        function vlibTemplate () {
+        public static function vlibTemplate () {
             global $cfg;
 
             $cache_dir = $cfg["path"].'.templateCache';
